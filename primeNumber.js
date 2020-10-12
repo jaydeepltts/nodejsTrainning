@@ -13,4 +13,4 @@ function primeNumber(minRange, maxRange) {
     return false
    
 }
-primeNumber(2,30)
+primeNumber(3,30)
