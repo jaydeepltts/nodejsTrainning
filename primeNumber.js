@@ -1,13 +1,16 @@
-function primeNumber(value) {
-    if(value>2){
-        for(var i = 2 ; i< value ; i++){
-            if(value%i === 0){
-                return false
+function primeNumber(minRange, maxRange) {
+    if(minRange>2){
+        for (let i = minRange; i <= maxRange; i++) {
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) {
+                   break;
+                }
+                console.log("prime Number",i);
             }
-            return true
+            
         }
     }
     return false
-    
+   
 }
-primeNumber(20)
+primeNumber(2,30)
